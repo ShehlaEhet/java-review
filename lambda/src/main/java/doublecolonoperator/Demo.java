@@ -28,7 +28,6 @@ public class Demo {
         BiFunction<String, Integer, String> fn = (str, i) -> str.substring(i);
         System.out.println(fn.apply("Developer", 6));
 
-
         BiFunction<String, Integer, String> fn2 = String::substring;
         System.out.println(fn.apply("Developer", 6));
 
@@ -37,5 +36,8 @@ public class Demo {
 
         Consumer<Integer> display2 = System.out::println;
         display2.accept(50);
+
+        BiFunction<MyClass, Integer, Double> v2 = MyClass::method;
+
     }
 }
