@@ -23,6 +23,7 @@ public class CreatingStream {
 
         Stream<Course> myCourse = myCourses.stream();
 
+
         //Creating Stream from Values
         Stream<Integer> stream = Stream.of(1,2,3,4);
 
